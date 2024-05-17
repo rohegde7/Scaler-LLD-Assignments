@@ -1,9 +1,15 @@
 package threads;
 
 public class Adder implements Runnable {
+    int x;
+    int y;
 
+    public Adder(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
     @Override
     public void run() {
-        System.out.println("I am the Adder class");
+        System.out.println(x+y);
     }
 }

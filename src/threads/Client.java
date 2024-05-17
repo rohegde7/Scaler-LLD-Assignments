@@ -1,11 +1,16 @@
 package threads;
 
+import java.util.Scanner;
+
 public class Client {
 
     public static void main(String[] args) {
-        System.out.println("I am the main class");
+        Scanner s = new Scanner(System.in);
+        int x = s.nextInt();
+        int y = s.nextInt();
 
-        Adder a = new Adder();
+
+        Adder a = new Adder(x, y);
 
         Thread t = new Thread(a);
         t.start();
