@@ -21,14 +21,26 @@ class Client {
         s2.age = 20;
         s2.name = "B";
 
-        swap(s1, s2);
+        int arr[] = new int[2];
+        arr[0] = 1;
+        arr[1] = 2;
+
+        swap(s1, s2, arr);
+
+        System.out.println(arr[0]);
 
         s1.display();
     }
 
-    private static void swap(PassByValueTest s1, PassByValueTest s2) {
+    private static void swap(PassByValueTest s1, PassByValueTest s2, int[] arr) {
         PassByValueTest temp = s1;
         s1 = s2;
         s2 = temp;
+
+        arr[0] = 10;
+        arr[1] = 20;
+
+        arr = new int[2];
+        arr[0] = 3433;
     }
 }
