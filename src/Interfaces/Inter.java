@@ -2,6 +2,10 @@ package Interfaces;
 
 import java.util.PriorityQueue;
 
+interface MyI {
+    void kyaHaal();
+}
+
 interface Inter {
     void dis();
 
@@ -26,5 +30,12 @@ class X {
     public static void main(String[] args) {
 //        new Abs();
 //        System.out.println(Inter.x);
+
+        MyI mi = new MyI(){
+            @Override
+            public void kyaHaal() {
+
+            }
+        };
     }
 }
