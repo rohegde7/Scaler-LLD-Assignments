@@ -27,4 +27,10 @@ class CollectMethodQuestion1 {
         return oddNumbers;
     }
 
+    static int getSum(Stream<Integer> stream){
+        // write code here
+        int sum = stream.reduce((item1, item2) -> item1 + item2).get();
+        return sum;
+    }
+
 }
