@@ -2,7 +2,7 @@ package threads.semaphores;
 
 import java.util.concurrent.Semaphore;
 
-private static class FooBar {
+class FooBar {
     private int n;
     Semaphore foo = new Semaphore(1);
     Semaphore bar = new Semaphore(0);
