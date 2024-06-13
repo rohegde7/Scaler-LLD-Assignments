@@ -34,3 +34,21 @@ class CollectMethodQuestion1 {
     }
 
 }
+
+class GFG {
+
+    // Driver code
+    public static void main(String[] args)
+    {
+
+        // Creating list of integers
+        List<Integer> array = Arrays.asList(5,10);
+
+        // Finding sum of all elements
+        int sum = array.stream().reduce(1,
+                Integer::sum);
+
+        // Displaying sum of all elements
+        System.out.println("The sum of all elements is " + sum);
+    }
+}
