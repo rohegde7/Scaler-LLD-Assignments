@@ -1,5 +1,8 @@
 package singleton;
 
+import java.io.File;
+import java.io.PrintWriter;
+
 public class FileBasedConfigurationManagerImpl extends FileBasedConfigurationManager {
 
     private static volatile FileBasedConfigurationManager configManager = null;
@@ -49,7 +52,7 @@ public class FileBasedConfigurationManagerImpl extends FileBasedConfigurationMan
         properties.clear();
     }
 
-    public static FileBasedConfigurationManager getInstance() {
+    public FileBasedConfigurationManager getaInstance() {
         if (configManager == null) {
             synchronized (FileBasedConfigurationManagerImpl.class) {
                 if (configManager == null) {
